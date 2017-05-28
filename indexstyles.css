@@ -7,13 +7,9 @@
     
 /*------------------------------------------------------GALLERY large screens*/
 @media (min-width: 674px){
-    main {
-        display: flex;
-    }
     .gallery {
         margin: 5px;
         height: 100%;
-/*        width: auto;*/
         position: relative;
     }
     figcaption{
@@ -21,10 +17,12 @@
         font-size: 90px;
         position: absolute;
         bottom: 0;
-/*        left: 0;*/
     }
-    main figure img {
-        height: 100%;
+}
+
+@media (max-height: 600px) {
+    figcaption {
+        font-size: 50px;
     }
 }
 

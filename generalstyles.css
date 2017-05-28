@@ -16,7 +16,7 @@ h2{
     font-size: 25px;
     width: 400px;
 }
-main{
+main, main figure img {
     height: 85vh;
 }
 footer{
