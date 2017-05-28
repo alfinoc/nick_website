@@ -1,0 +1,59 @@
+/*-----------BIO----------------*/
+
+/*Big Screens*/
+@media (min-width: 674px){
+    main{
+        display: flex;
+    }
+    main img{
+        height: 50%;
+    }
+    main p {
+        min-width: 200px;
+        margin: 0 10px;
+        line-height: 3;
+    }
+    figure{
+        position: relative;
+    }
+    figcaption{
+        float: right;
+        margin: 5px 5px;
+        position: absolute;
+        display: table-row;
+    }
+    .socialmedia{
+        width: 90px;
+        height: 90px;
+        margin: 10% 25px;
+    }
+}
+/*Small Screens*/
+@media (max-width: 674px){
+    main{
+        width:76%;
+        
+    }
+    main .headshot{
+        width: 100%;
+        height: auto;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .socialmedia{
+        width:100px;
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-left: 35%;
+        
+    }
+    .socialmedia img{
+        width:40px;
+        height: auto;
+        margin-top: 20px
+    }
+    p{
+        width: 100%;
+        line-height: 2;
+    }
+}

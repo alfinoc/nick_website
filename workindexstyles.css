@@ -1,0 +1,50 @@
+/*/*----------------------INDEX--------------------------------*/
+
+/*find out what is up with the margins*/
+
+/*------------------------------------------------------GALLERY*/
+    
+    
+/*------------------------------------------------------GALLERY large screens*/
+@media (min-width: 674px){
+    main {
+        display: flex;
+    }
+    .gallery {
+        margin: 5px;
+        height: 100%;
+        width: auto;
+        position: relative;
+    }
+    figcaption{
+        color: #ffffff;
+        font-size: 100px;
+        width: 15%;
+        float: left;
+        position: absolute;
+        bottom: 0;
+    }
+    main figure img {
+        height: 100%;
+    }
+}
+
+/*------------------------------------------------------GALLERY small screens*/
+@media (max-width: 674px){
+    .gallery img {
+    width: 100%;
+    height: auto;
+    }
+    .gallery {
+        margin: 5px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+/*       figcaption{*/
+        color: #000000;
+        font-size: 25px;
+        float: left;
+/*        position: absolute;*/
+        
+    }
+}

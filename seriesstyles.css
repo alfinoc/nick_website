@@ -1,0 +1,31 @@
+/*------------------------------------------------------GALLERY*/
+/*make margin between each photo pair and one trio*/
+
+/*------------------------------------------------------GALLERY large screens*/
+@media (min-width: 674px){
+    main {
+        display: flex;
+    }
+    .gallery {
+        margin: 5px;
+        height: 100%;
+        width: auto;
+/*        margin: 0px 7px;*/
+    }
+    main figure img {
+        height: 100%;
+    }
+}
+
+/*------------------------------------------------------GALLERY small screens*/
+@media (max-width: 674px){
+    .gallery img {
+    width: 50px%;
+    height: auto;
+    }
+    .gallery {
+        margin: 5px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}

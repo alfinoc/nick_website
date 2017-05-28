@@ -1,0 +1,153 @@
+/*-------------------------GENERAL-----------------------------*/
+/*copyright half off the screen*/
+/*------------------------------------------------------SECTIONS*/
+h1, figcaption, ul, footer {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+p, h2{
+    font-family: 'raleway', sans-serif;
+}
+h2{
+    font-size: 25px;
+    width: 400px;
+}
+main{
+    height: 85vh;
+}
+footer{
+    font-size:10px;
+    color: #858585;
+    position: fixed;
+    float: right;
+    display:block;
+    right: 7.5px;
+}
+
+/*------------------------------------------------------SECTIONS small screens*/
+@media (max-width: 674px){
+    h1{
+        margin-left: 35px;
+        width: 100%;
+    }
+    p{
+        font-size: 17px;
+        text-indent: 25px;
+        width:100&;
+        padding-left: 45px;
+        padding-right: 45px;
+    } 
+    footer{
+        transform: rotate(90deg);
+        transform-origin: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+
+/*------------------------------------------------------MENU*/
+
+/*------------------------------------------------------MENUlarge screens*/
+@media (min-width: 674px){
+    header, h1 {
+        flex-grow: 1;
+    }
+    h1.name {
+        margin-right: 1em;
+        background-color: white;
+    }
+    h1.name-abbreviated {
+        position: fixed;
+        left: 20px;
+        z-index: -1;
+    }
+    div.mask {
+        background-color: white;
+        border: 1px solid red;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    h1:nth-child(2) {
+        flex-grow: 4;
+        height: 30px;
+    }
+    h1:nth-child(3) {
+        position: fixed;
+        right: 400px;
+    }
+    h1:nth-child(4) {
+        position: fixed;
+        right: 250px;
+    }
+    h1:nth-child(5) {
+        position: fixed;
+        right:100px;
+    }
+    .bigmenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15px;
+        position: relative;
+    }
+    .lilmenu{
+        display: none;
+    }
+    
+    main div:first-child {
+        width: 400px;
+    }
+    main {
+        display: flex;
+    }    
+}
+
+/*------------------------------------------------------MENU small screens*/
+@media (max-width: 674px) {
+    #burger{
+        transform: rotate(90deg);
+        transform-origin: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        height:30px;
+        float: left;
+    }
+    header {
+        transform: rotate(90deg);
+        transform-origin: left top 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        position: fixed;
+        font-size: 10px;
+        height:54px;
+        width:500px;
+        left:54px;
+    }
+    h2{
+        display: none;
+    }
+    main a figcaption{
+        color: black
+    }
+    a:link{
+        text-decoration: none;
+    }
+    
+    .bigmenu{
+        display: none;
+    }
+    footer{
+            right: -30px;
+    }
+}
