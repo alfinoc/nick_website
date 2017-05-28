@@ -10,6 +10,16 @@
     main {
         display: flex;
     }
+    main.work-index-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-index-grid-row {
+        display: flex;
+    }
+    .work-index-grid-row figure img {
+        height: 42.5vh;
+    }
     .gallery {
         margin: 5px;
         height: 100%;

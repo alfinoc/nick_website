@@ -100,10 +100,6 @@ footer{
     .lilmenu{
         display: none;
     }
-    
-    main div:first-child {
-        width: 400px;
-    }
     main {
         display: flex;
     }    
